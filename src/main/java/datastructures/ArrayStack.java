@@ -1,15 +1,15 @@
 package main.java.datastructures;
 
-public class Stack {
+public class ArrayStack {
     private int [] array;
     private int top = -1;
     private int size = 0;
 
-    public Stack() {
+    public ArrayStack() {
         array = new int[10];
     }
 
-    public Stack(int size) {
+    public ArrayStack(int size) {
         array = new int[size];
     }
 
