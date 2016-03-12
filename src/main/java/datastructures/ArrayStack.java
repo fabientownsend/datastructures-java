@@ -1,4 +1,4 @@
-package main.java.datastructures;
+package datastructures;
 
 public class ArrayStack {
     private int [] array;

@@ -1,6 +1,5 @@
-package test.java.datastructures;
+package datastructures;
 
-import main.java.datastructures.ArrayStack;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
