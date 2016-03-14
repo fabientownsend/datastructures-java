@@ -37,6 +37,13 @@ public class LinkedList {
         }
     }
 
+    public void removeFirst() {
+        if(size != 0) {
+            header.next = header.next.next;
+            size--;
+        }
+    }
+
     public int getSize() {
         return size;
     }
