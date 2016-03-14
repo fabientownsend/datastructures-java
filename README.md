@@ -9,4 +9,12 @@ I plan to implemente those following data structure:
 - Queue
 - HashTable
 - Heaps
+ 
+
+| Abstract Data Structure | Data Structure    |
+| ------------------------|------------------:|
+| Stack                   | Array, LinkedList |
+| Queue                   | Array, LinkedList |
+| Priority queue          | Heap              |
+| Dictionary              | are neat          |
 
