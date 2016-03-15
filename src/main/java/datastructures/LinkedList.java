@@ -44,6 +44,24 @@ public class LinkedList {
         }
     }
 
+    public void removeLast() {
+        if(size == 1) {
+            header.next = null;
+            lastNode = header;
+            size--;
+        } else if(size != 0) {
+            Node n = header.next;
+
+            for (int i = 0; i < size - 2; i++) {
+               n = n.next;
+            }
+
+            lastNode = n;
+            n.next = null;
+            size--;
+        }
+    }
+
     public int getSize() {
         return size;
     }

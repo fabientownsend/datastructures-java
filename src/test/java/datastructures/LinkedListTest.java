@@ -46,4 +46,15 @@ public class LinkedListTest {
         assertEquals(temp, 1);
         assertEquals(linkedList, "2");
     }
+
+    @Test
+    public  void testRemoveLast() throws Exception {
+        c.append(1);
+        c.append(2);
+        c.removeLast();
+        String linkedList = c.toString();
+        int temp = c.getSize();
+        assertEquals(temp, 1);
+        assertEquals(linkedList, "1");
+    }
 }
