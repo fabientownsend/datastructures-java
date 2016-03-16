@@ -10,8 +10,9 @@ public class LinkedListTest {
 
     @Before
     public void setUp() {
-        c = new LinkedList();
+        c = new LinkedList<Integer>();
     }
+
     @Test
     public void testPrepend() throws Exception {
         c.prepend(1);

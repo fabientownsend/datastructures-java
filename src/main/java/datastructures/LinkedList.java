@@ -1,17 +1,17 @@
 package datastructures;
 
-public class LinkedList {
-    private Node header;
-    private Node lastNode;
+public class LinkedList<E> {
+    private Node<E> header;
+    private Node<E> lastNode;
     private int size;
 
     public LinkedList() {
-        header = new Node(null);
+        header = new Node<E>(null);
         lastNode = header;
     }
 
-    public void prepend(Integer data) {
-        Node n = new Node(data);
+    public void prepend(E data) {
+        Node n = new Node<E>(data);
         if(size == 0) {
             header.next = n;
             lastNode = n;
@@ -24,8 +24,8 @@ public class LinkedList {
         }
     }
 
-    public void append(Integer data) {
-        Node n = new Node(data);
+    public void append(E data) {
+        Node n = new Node<E>(data);
         if(size == 0) {
             header.next = n;
             lastNode = n;

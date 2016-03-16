@@ -1,10 +1,10 @@
 package datastructures;
 
-public class Node {
-    public Integer data;
-    public Node next;
+public class Node<E> {
+    public E data;
+    public Node<E> next;
 
-    public Node(Integer data) {
+    public Node(E data) {
         this.data = data;
         next = null;
     }
