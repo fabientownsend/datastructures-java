@@ -20,7 +20,6 @@ public class ArrayStack {
         }
 
         array[top] = data;
-        size++;
     }
 
     public void pop() {
