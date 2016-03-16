@@ -3,7 +3,6 @@ package datastructures;
 public class ArrayStack {
     private int [] array;
     private int top = -1;
-    private int size = 0;
 
     public ArrayStack() {
         array = new int[10];
