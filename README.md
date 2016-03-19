@@ -4,12 +4,7 @@
 The purpose of this repository, for me, is to study sata structure and get more familiar with Java.
 I plan to implemente those following data structure:
 
-- Linked List
-- Stack
-- Queue
-- HashTable
-- Heaps
- 
+##DATA STRUCTURES
 
 | Abstract Data Structure | Data Structure    |
 | ------------------------|-------------------|
@@ -17,6 +12,18 @@ I plan to implemente those following data structure:
 | Queue                   | Array, LinkedList |
 | Priority queue          | Heap              |
 | Dictionary              | are neat          |
+
+- [Linked List](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/LinkedList.java)
+- Double Linked List
+- Stack
+  - [LinkedList Stack](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/StackLinkedList.java)
+  - [Array Stack](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/ArrayStack.java)
+- Queue
+- HashTable
+- Heaps
+ 
+
+
 
 | Stack memory                         | Heap memory              |
 | -------------------------------------|--------------------------|
