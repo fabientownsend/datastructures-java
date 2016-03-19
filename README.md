@@ -19,6 +19,8 @@ I plan to implemente those following data structure:
   - [LinkedList Stack](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/StackLinkedList.java)
   - [Array Stack](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/ArrayStack.java)
 - Queue
+  - [LinkedList Queue](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/Queue.java)
+  - Array Queue
 - HashTable
 - Heaps
  
