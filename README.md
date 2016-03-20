@@ -21,6 +21,7 @@ I plan to implemente those following data structure:
 - Queue
   - [LinkedList Queue](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/Queue.java)
   - Array Queue
+- Binary Search Trees 
 - HashTable
 - Heaps
  
