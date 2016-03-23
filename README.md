@@ -24,9 +24,6 @@ I plan to implemente those following data structure:
 - Binary Search Trees
 - HashTable
 - Heaps
- 
-
-
 
 | Stack memory                         | Heap memory              |
 | -------------------------------------|--------------------------|
@@ -43,3 +40,9 @@ I plan to implemente those following data structure:
 | Insert | O(log n)     | O(n)       |
 | Delete | O(log n)     | O(n)       |
 | Search | O(log n)     | O(n)       |
+
+## Generics convention
+- T: Type
+- E: Element
+- K: key
+- V: Value
