@@ -1,15 +1,15 @@
 package datastructures;
 
-public class StackLinkedList<T> {
-    private Node<T> header;
+public class StackLinkedList<E> {
+    private Node<E> header;
     private int size;
 
-    public void push(T data) {
+    public void push(E data) {
         if(header == null) {
-            header = new Node<T>(data);
+            header = new Node<E>(data);
         } else {
-            Node<T> temp = header;
-            header = new Node<T>(data);
+            Node<E> temp = header;
+            header = new Node<E>(data);
             header.setNext(temp);
         }
         size++;
@@ -19,8 +19,8 @@ public class StackLinkedList<T> {
         return size;
     }
 
-    public T pop() {
-        T data = header.getData();
+    public E pop() {
+        E data = header.getData();
         header = header.getNext();
         size--;
         return data;
@@ -30,7 +30,7 @@ public class StackLinkedList<T> {
         return header == null;
     }
 
-    public T peek() {
+    public E peek() {
         return header.getData();
     }
 }
