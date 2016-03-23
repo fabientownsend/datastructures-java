@@ -10,7 +10,7 @@ public class StackLinkedList<E> {
         } else {
             Node<E> temp = header;
             header = new Node<E>(data);
-            header.next = temp;
+            header.setNext(temp);
         }
         size++;
     }
@@ -20,8 +20,8 @@ public class StackLinkedList<E> {
     }
 
     public E pop() {
-        E data = header.data;
-        header = header.next;
+        E data = header.getData();
+        header = header.getNext();
         size--;
         return data;
     }
@@ -31,6 +31,6 @@ public class StackLinkedList<E> {
     }
 
     public E peek() {
-        return header.data;
+        return header.getData();
     }
 }

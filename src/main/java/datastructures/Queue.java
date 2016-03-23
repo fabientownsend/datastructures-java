@@ -14,15 +14,15 @@ public class Queue<E> {
         } else {
             Node<E> temp = this.tail;
             tail = newNode;
-            temp.next = tail;
+            temp.setNext(tail);
         }
 
         count++;
     }
 
     public E dequeu() {
-        E data = this.header.data;
-        this.header = this.header.next;
+        E data = this.header.getData();
+        this.header = this.header.getNext();
 
         if(isEmpty()) {
             this.tail = null;
@@ -33,8 +33,9 @@ public class Queue<E> {
     }
 
     public E peek() {
-        return header.data;
+        return header.getData();
     }
+
     public boolean isEmpty() {
         return this.header == null;
     }
