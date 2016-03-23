@@ -21,7 +21,7 @@ I plan to implemente those following data structure:
 - Queue
   - [LinkedList Queue](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/Queue.java)
   - Array Queue
-- Binary Search Trees 
+- Binary Search Trees
 - HashTable
 - Heaps
  
@@ -35,3 +35,11 @@ I plan to implemente those following data structure:
 | Local variables                      | Objects                  |
 | Spaces is managed efficiently by CPU | Memory may be fragmented |
 | Variables cannot be resized          | Variables can be resized |
+
+## Time complexity Binary Search Trees
+|        | Average case | Worst case |
+| ----------------------|------------|
+| Space  | O(n)         | O(n)       |
+| Insert | O(log n)     | O(n)       |
+| Delete | O(log n)     | O(n)       |
+| Search | O(log n)     | O(n)       |
