@@ -1,18 +1,18 @@
 package datastructures;
 
-public class Queue<E> {
-    private Node<E> header;
-    private Node<E> tail;
+public class Queue<T> {
+    private Node<T> header;
+    private Node<T> tail;
     private int count;
 
-    public void enqueue(E data) {
-        Node<E> newNode  = new Node<E>(data);
+    public void enqueue(T data) {
+        Node<T> newNode  = new Node<T>(data);
 
         if(isEmpty()) {
             header = newNode;
             tail = header;
         } else {
-            Node<E> temp = this.tail;
+            Node<T> temp = this.tail;
             tail = newNode;
             temp.setNext(tail);
         }
@@ -20,8 +20,8 @@ public class Queue<E> {
         count++;
     }
 
-    public E dequeu() {
-        E data = this.header.getData();
+    public T dequeu() {
+        T data = this.header.getData();
         this.header = this.header.getNext();
 
         if(isEmpty()) {
@@ -32,7 +32,7 @@ public class Queue<E> {
         return data;
     }
 
-    public E peek() {
+    public T peek() {
         return header.getData();
     }
 
