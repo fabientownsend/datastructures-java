@@ -35,7 +35,7 @@ I plan to implemente those following data structure:
 
 ## Time complexity Binary Search Trees
 |        | Average case | Worst case |
-| ----------------------|------------|
+| -------|--------------|------------|
 | Space  | O(n)         | O(n)       |
 | Insert | O(log n)     | O(n)       |
 | Delete | O(log n)     | O(n)       |
