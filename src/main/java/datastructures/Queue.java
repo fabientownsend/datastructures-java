@@ -6,22 +6,21 @@ public class Queue<E> {
     private int count;
 
     public void enqueue(E data) {
-        Node<E> newNode  = new Node<E>(data);
+        final Node<E> node = new Node<E>(data);
 
         if(isEmpty()) {
-            header = newNode;
-            tail = header;
+            header = node;
         } else {
-            Node<E> temp = this.tail;
-            tail = newNode;
-            temp.setNext(tail);
+            final Node<E> previousTail = this.tail;
+            previousTail.setNext(node);
         }
 
+        tail = node;
         count++;
     }
 
     public E dequeu() {
-        E data = this.header.getData();
+        final E data = this.header.getData();
         this.header = this.header.getNext();
 
         if(isEmpty()) {
