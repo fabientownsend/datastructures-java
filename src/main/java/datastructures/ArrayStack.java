@@ -1,25 +1,25 @@
 package datastructures;
 
 public class ArrayStack {
-    private int [] array;
+    private int [] stack;
     private int top = -1;
 
     public ArrayStack() {
-        array = new int[10];
+        stack = new int[10];
     }
 
     public ArrayStack(int size) {
-        array = new int[size];
+        stack = new int[size];
     }
 
     public void push(Integer data) {
         top += 1;
 
-        if(array.length == top) {
+        if(stack.length == top) {
             resize();
         }
 
-        array[top] = data;
+        stack[top] = data;
     }
 
     public void pop() {
@@ -38,29 +38,29 @@ public class ArrayStack {
 
     public Integer peek() {
         if(!isEmpty()) {
-            return array[top];
+            return stack[top];
         } else {
             return null;
         }
     }
 
     public int getSize() {
-        return array.length;
+        return stack.length;
     }
 
     public void resize() {
-        int[] temp = new int[array.length*2];
-        for(int i = 0; i < array.length; i++) {
-            temp[i] = array[i];
+        final int[] resizedStack = new int[stack.length*2];
+        for(int i = 0; i < stack.length; i++) {
+            resizedStack[i] = stack[i];
         }
-        array = temp;
+        stack = resizedStack;
     }
 
     public String toString() {
-        String temp = "";
+        String stackElements = "";
         for(int i = top; i >=0; i--) {
-            temp += array[i];
+            stackElements += stack[i];
         }
-        return temp;
+        return stackElements;
     }
 }
