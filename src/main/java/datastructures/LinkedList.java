@@ -11,30 +11,31 @@ public class LinkedList<E> {
     }
 
     public void prepend(E data) {
-        Node n = new Node<E>(data);
+        final Node newFirstNode = new Node<E>(data);
+
         if(size == 0) {
-            header.setNext(n);
-            lastNode = n;
-            size++;
+            header.setNext(newFirstNode);
+            lastNode = newFirstNode;
         } else {
-            Node temp = header.getNext();
-            header.setNext(n);
-            n.setNext(temp);
-            size++;
+            final Node firstNode = header.getNext();
+            header.setNext(newFirstNode);
+            newFirstNode.setNext(firstNode);
         }
+
+        size++;
     }
 
     public void append(E data) {
-        Node n = new Node<E>(data);
+        final Node newLastNode = new Node<E>(data);
+
         if(size == 0) {
-            header.setNext(n);
-            lastNode = n;
-            size++;
+            header.setNext(newLastNode);
         } else {
-            lastNode.setNext(n);
-            lastNode = n;
-            size++;
+            lastNode.setNext(newLastNode);
         }
+
+        lastNode = newLastNode;
+        size++;
     }
 
     public void removeFirst() {
@@ -68,11 +69,11 @@ public class LinkedList<E> {
 
     public String toString() {
         Node n = header.getNext();
-        String temp = "";
+        String datas = "";
         while(n != null) {
-            temp += n.getData();
+            datas += n.getData();
             n = n.getNext();
         }
-        return temp;
+        return datas;
     }
 }
