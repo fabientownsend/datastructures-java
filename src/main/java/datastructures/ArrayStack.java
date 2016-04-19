@@ -2,50 +2,49 @@ package datastructures;
 
 public class ArrayStack {
     private int [] stack;
-    private int top = -1;
+    private int capacity;
+    private int size = 0;
 
     public ArrayStack() {
         stack = new int[10];
     }
 
-    public ArrayStack(int size) {
-        stack = new int[size];
+    public ArrayStack(int capacity) {
+        this.capacity = capacity;
+        stack = new int[capacity];
     }
 
     public void push(Integer data) {
-        top += 1;
-
-        if(stack.length == top) {
-            resize();
+        if(size == capacity) {
+            throw new Overflow();
         }
 
-        stack[top] = data;
+        stack[size] = data;
+        size++;
     }
 
     public void pop() {
-        if(!isEmpty()) {
-            top -= 1;
+        if(isEmpty()) {
+            throw new Underflow();
         }
+
+        size--;
     }
 
     public boolean isEmpty() {
-        if(top == -1) {
-            return true;
-        } else {
-            return false;
-        }
+        return size == 0;
     }
 
     public Integer peek() {
         if(!isEmpty()) {
-            return stack[top];
+            return stack[size - 1];
         } else {
             return null;
         }
     }
 
     public int getSize() {
-        return stack.length;
+        return size;
     }
 
     public void resize() {
@@ -58,9 +57,15 @@ public class ArrayStack {
 
     public String toString() {
         String stackElements = "";
-        for(int i = top; i >=0; i--) {
+        for(int i = size - 1; i >=0; i--) {
             stackElements += stack[i];
         }
         return stackElements;
+    }
+
+    public class Overflow extends RuntimeException {
+    }
+
+    public class Underflow extends  RuntimeException {
     }
 }
