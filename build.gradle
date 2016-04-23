@@ -1,11 +1,11 @@
-apply plugin: 'java'
-
 plugins {
     id 'net.saliman.cobertura' version '2.3.1'
     id 'com.github.kt3k.coveralls' version '2.6.3'
 }
 
 cobertura.coverageFormats = ['html', 'xml']
+apply plugin: 'java'
+
 
 repositories {
     mavenCentral()
@@ -14,3 +14,4 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
 }
+
