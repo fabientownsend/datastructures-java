@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/fabientownsend/datastructures-java.svg?branch=master)](https://travis-ci.org/fabientownsend/datastructures-java) 
-
+[![Coverage Status](https://coveralls.io/repos/github/fabientownsend/datastructures-java/badge.svg?branch=master)](https://coveralls.io/github/fabientownsend/datastructures-java?branch=master)
 #Purpose
 The purpose of this repository, for me, is to study sata structure and get more familiar with Java.
 I plan to implemente those following data structure:
