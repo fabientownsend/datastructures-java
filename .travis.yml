@@ -3,8 +3,5 @@ language: java
 jdk:
 - oraclejdk8
 
-before_install:
-- chmod -x gradlew
-
 after_succes:
 - ./gradlew jacocoTestReport coveralls
