@@ -41,6 +41,14 @@ I plan to implemente those following data structure:
 | Delete | O(log n)     | O(n)       |
 | Search | O(log n)     | O(n)       |
 
+## Time complexity Balanced Trees
+|        | Average case | Worst case |
+| -------|--------------|------------|
+| Space  | O(n)         | O(n)       |
+| Insert | O(log n)     | O(log n)   |
+| Delete | O(log n)     | O(log n)   |
+| Search | O(log n)     | O(log n)   |
+
 ## Generics convention
 - T: Type
 - E: Element
