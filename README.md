@@ -22,6 +22,7 @@ I plan to implemente those following data structure:
   - [LinkedList Queue](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/Queue.java)
   - Array Queue
 - [Binary Search Trees](https://github.com/fabientownsend/datastructures-java/blob/master/src/main/java/datastructures/BinarySearchTrees.java)
+- AVL Trees
 - HashTable
 - Heaps
 
